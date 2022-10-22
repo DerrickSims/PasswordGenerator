@@ -1,0 +1,24 @@
+﻿@model PasswordGeneratorViewModel
+
+ 
+<div>
+   <div class="align-self-lg-center">
+       <form method="post" action="GenerateRandomPassword">
+         <div class="form-control">
+            <label for="PasswordLength" class="form-label">PasswordLength</label>
+            <input type="number" class="form-control" id="PasswordLenght" name="PasswordLength">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+  
+    </form>
+
+   </div>
+    
+    <div class="text-center">
+       
+        <p>@Model.Password</p>
+
+    </div>
+
+</div>
+
